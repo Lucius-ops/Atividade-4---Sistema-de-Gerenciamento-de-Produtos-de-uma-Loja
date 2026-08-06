@@ -3,8 +3,8 @@ import java.time.LocalDate;
 public class Alimento extends Produto {
     private LocalDate validade;
 
-    public Alimento(String nome, double preco, int estoque, LocalDate validade) {
-        super(nome, preco, estoque);
+    public Alimento(String nome, double preco, int estoque, Fornecedor fornecedor, LocalDate validade) {
+        super(nome, preco, estoque, fornecedor);
         this.validade = validade;
     }
 
