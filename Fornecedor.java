@@ -9,7 +9,19 @@ public class Fornecedor {
         this.cnpj = cnpj;
     }
 
-    public String getNome() { return nome; }
-    public String getTelefone() { return telefone; }
-    public String getCnpj() { return cnpj; }
+    public String getNome() {
+        return nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void apresentar() {
+        System.out.println("Fornecedor: " + nome + " | Telefone: " + telefone + " | CNPJ: " + cnpj);
+    }
 }
